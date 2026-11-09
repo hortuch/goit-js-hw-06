@@ -6,21 +6,21 @@ const customer = {
   
   // Change code below this line
   getBalance() {
-    return this.balance; // добавили this
+    return this.balance; 
   },
   getDiscount() {
-    return this.discount; // добавили this
+    return this.discount; 
   },
   setDiscount(value) {
-    this.discount = value; // добавили this
+    this.discount = value;
   },
   getOrders() {
-    return this.orders; // добавили this
+    return this.orders;
   },
   addOrder(cost, order) {
-    // добавили this перед balance и discount
+    
     this.balance -= cost - cost * this.discount; 
-    this.orders.push(order); // добавили this
+    this.orders.push(order);
   },
   // Change code above this line
 };
